@@ -15,8 +15,7 @@
   box-shadow: 0 10px 20px 1px #dee8fe;
   width: 600px;
   border-radius: 1.5rem;
-  margin: auto;
-  margin-top: 9rem;
+  margin: 7rem auto;
 }
 
 .result {
@@ -274,3 +273,16 @@
   color: rgb(55, 119, 176);
 }
 
+.summary button {
+  margin-top: 2rem;
+  padding: .8rem 5.8rem;
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  background-color: hsl(224, 30%, 27%);
+}
+
+.summary button:hover {
+  cursor: pointer;
+  background: linear-gradient(to bottom, hsl(234, 83%,65%), hsl(234, 85%, 50%));
+}
