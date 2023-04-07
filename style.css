@@ -21,7 +21,7 @@
 
 .result {
   width: 50%;
-  background-color: hsl(234, 86%, 46%);
+  background: linear-gradient(to bottom, hsl(234, 86%, 58%), hsl(234, 85%, 46%));
   color: hsl(241, 100%, 89%);
   text-align: center;
   border-radius: 1.5rem;
@@ -35,7 +35,7 @@
 .score {
   width: 170px;
   margin: 1.5rem auto;
-  background: linear-gradient(to bottom, hsl(234, 83%, 35%), hsl(234, 85%, 45%));
+  background: linear-gradient(to bottom, hsl(234, 83%, 40%), hsl(234, 85%, 50%));
   padding: 2.5rem 2rem;
   border-radius: 50%;
 }
@@ -57,3 +57,220 @@
 .score-eval {
   margin-top: 1rem;
 }
+
+.summary{
+  width: 50%;
+  padding: 2.8rem 2rem;
+}
+
+.summaryT {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.summaryChild {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: .6rem .8rem;
+  border-radius: .4rem;
+  margin-top: 1.2rem;
+}
+
+.summaryChild span{
+  color: #d2d2d2;
+}
+
+.summaryChild-wrapper {
+  position: relative;
+}
+
+.summaryChild-wrapper::before, 
+.summaryChild-wrapper::after {
+  content: "";
+  height: 20%;
+  width: 3%;
+  position: absolute;
+}
+
+.summaryChild::before, 
+.summaryChild::after {
+  content: "";
+  height: 20%;
+  width: 3%;
+  position: absolute;
+}
+
+.summaryChildT {
+  display: flex;
+}
+
+.summaryChildT img{
+  width: 16px;
+}
+
+.reaction {
+  background-color: rgba(255, 36, 72, 0.060);
+}
+
+
+.reaction::before {
+  border-left: 1px solid rgb(245, 30, 66, 0.35);
+  border-top: 1px solid rgb(245, 30, 66, 0.35);
+  left: 0;
+  top: 0;
+  border-top-left-radius: .4rem;
+}
+
+.reaction::after {
+  border-left: 1px solid rgb(245, 30, 66, 0.35);
+  border-bottom: 1px solid rgb(245, 30, 66, 0.35);
+  border-bottom-left-radius: .4rem;
+  bottom: 0;
+  left: 0;
+}
+
+.reactionW::before {
+  border-right: 1px solid rgb(245, 30, 66, 0.35);
+  border-top: 1px solid rgb(245, 30, 66, 0.35);
+  right: 0;
+  top: 0;
+  border-top-right-radius: .4rem;
+}
+
+.reactionW::after {
+  border-right: 1px solid rgb(245, 30, 66, 0.35);
+  border-bottom: 1px solid rgb(245, 30, 66, 0.35);
+  border-bottom-right-radius: .4rem;
+  bottom: 0;
+  right: 0;
+}
+
+.reactionT p {
+  margin-left: .5rem;
+  color: rgb(245, 30, 66);
+}
+
+.memory {
+  background-color: rgba(255, 200, 36, 0.060);
+}
+
+.memory::before {
+  border-left: 1px solid rgba(255, 200, 36, 0.35);
+  border-top: 1px solid rgba(255, 200, 36, 0.35);
+  left: 0;
+  top: 0;
+  border-top-left-radius: .4rem;
+}
+
+.memory::after {
+  border-left: 1px solid rgba(255, 200, 36, 0.35);
+  border-bottom: 1px solid rgba(255, 200, 36, 0.35);
+  border-bottom-left-radius: .4rem;
+  bottom: 0;
+  left: 0;
+}
+
+.memoryW::before {
+  border-right: 1px solid rgba(255, 200, 36, 0.35);
+  border-top: 1px solid rgba(255, 200, 36, 0.35);
+  right: 0;
+  top: 0;
+  border-top-right-radius: .4rem;
+}
+
+.memoryW::after {
+  border-right: 1px solid rgba(255, 200, 36, 0.35);
+  border-bottom: 1px solid rgba(255, 200, 36, 0.35);
+  border-bottom-right-radius: .4rem;
+  bottom: 0;
+  right: 0;
+}
+
+.memoryT p {
+  margin-left: .5rem;
+  color: rgb(255, 200, 36);
+}
+
+.verbal {
+  background-color: rgba(55, 176, 65, 0.060);
+}
+
+.verbal::before {
+  border-left: 1px solid rgba(55, 176, 65, 0.35);
+  border-top: 1px solid rgba(55, 176, 65, 0.35);
+  left: 0;
+  top: 0;
+  border-top-left-radius: .4rem;
+}
+
+.verbal::after {
+  border-left: 1px solid rgba(55, 176, 65, 0.35);
+  border-bottom: 1px solid rgba(55, 176, 65, 0.35);
+  border-bottom-left-radius: .4rem;
+  bottom: 0;
+  left: 0;
+}
+
+.verbalW::before {
+  border-right: 1px solid rgba(55, 176, 65, 0.35);
+  border-top: 1px solid rgba(55, 176, 65, 0.35);
+  right: 0;
+  top: 0;
+  border-top-right-radius: .4rem;
+}
+
+.verbalW::after {
+  border-right: 1px solid rgba(55, 176, 65, 0.35);
+  border-bottom: 1px solid rgba(55, 176, 65, 0.35);
+  border-bottom-right-radius: .4rem;
+  bottom: 0;
+  right: 0;
+}
+
+.verbalT p {
+  margin-left: .5rem;
+  color: rgb(55, 176, 65);
+}
+
+.visual {
+  background-color: rgba(55, 119, 176, 0.060);
+}
+
+.visual::before {
+  border-left: 1px solid rgba(55, 119, 176, 0.35);
+  border-top: 1px solid rgba(55, 119, 176, 0.35);
+  left: 0;
+  top: 0;
+  border-top-left-radius: .4rem;
+}
+
+.visual::after {
+  border-left: 1px solid rgba(55, 119, 176, 0.35);
+  border-bottom: 1px solid rgba(55, 119, 176, 0.35);
+  border-bottom-left-radius: .4rem;
+  bottom: 0;
+  left: 0;
+}
+
+.visualW::before {
+  border-right: 1px solid rgba(55, 119, 176, 0.35);
+  border-top: 1px solid rgba(55, 119, 176, 0.35);
+  right: 0;
+  top: 0;
+  border-top-right-radius: .4rem;
+}
+
+.visualW::after {
+  border-right: 1px solid rgba(55, 119, 176, 0.35);
+  border-bottom: 1px solid rgba(55, 119, 176, 0.35);
+  border-bottom-right-radius: .4rem;
+  bottom: 0;
+  right: 0;
+}
+
+.visualT p {
+  margin-left: .5rem;
+  color: rgb(55, 119, 176);
+}
+
